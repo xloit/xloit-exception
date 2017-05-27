@@ -29,7 +29,7 @@ class MultiPartUploadException extends Exception
     /**
      * Code of the exception.
      *
-     * @var integer|string
+     * @var int|string
      */
     const CODE = 308;
 

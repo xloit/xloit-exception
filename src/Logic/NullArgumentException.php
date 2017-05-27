@@ -29,7 +29,7 @@ class NullArgumentException extends InvalidArgumentException
     /**
      * Code of the exception.
      *
-     * @var integer|string
+     * @var int|string
      */
     const CODE = 209;
 

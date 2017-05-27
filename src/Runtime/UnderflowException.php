@@ -31,7 +31,7 @@ class UnderflowException extends RuntimeException
     /**
      * Code of the exception.
      *
-     * @var integer|string
+     * @var int|string
      */
     const CODE = 303;
 } 

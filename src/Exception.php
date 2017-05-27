@@ -32,7 +32,7 @@ class Exception extends PhpException implements ToStringInterface
     /**
      * Code of the exception.
      *
-     * @var integer|string
+     * @var int|string
      */
     const CODE = 1;
 
@@ -53,7 +53,7 @@ class Exception extends PhpException implements ToStringInterface
     /**
      * Code of the exception.
      *
-     * @var integer|string
+     * @var int|string
      */
     protected $code = self::CODE;
 
@@ -90,9 +90,9 @@ class Exception extends PhpException implements ToStringInterface
      *
      * @link   http://php.net/manual/en/exception.construct.php
      *
-     * @param string         $message  The message format.
-     * @param integer|string $code     The code of this exception.
-     * @param PhpException   $previous The previous exception.
+     * @param string       $message  The message format.
+     * @param int|string   $code     The code of this exception.
+     * @param PhpException $previous The previous exception.
      *
      * @throws InvalidArgumentException
      */
@@ -130,10 +130,10 @@ class Exception extends PhpException implements ToStringInterface
     /**
      * Creates a new exception by the given arguments.
      *
-     * @param string         $message          The message format.
-     * @param array          $messageVariables The message variables.
-     * @param integer|string $code             The code of this exception.
-     * @param PhpException   $previous         The previous exception.
+     * @param string       $message          The message format.
+     * @param array        $messageVariables The message variables.
+     * @param int|string   $code             The code of this exception.
+     * @param PhpException $previous         The previous exception.
      *
      * @return Exception The new exception.
      * @throws InvalidArgumentException
@@ -219,7 +219,7 @@ class Exception extends PhpException implements ToStringInterface
     /**
      * Sets the Exception code.
      *
-     * @param integer|string $code
+     * @param int|string $code
      *
      * @return static
      * @throws InvalidArgumentException
@@ -229,7 +229,7 @@ class Exception extends PhpException implements ToStringInterface
         if (!is_scalar($code)) {
             throw new InvalidArgumentException(
                 sprintf(
-                    'Wrong parameters for %s([integer|string $code]); %s given.',
+                    'Wrong parameters for %s([int|string $code]); %s given.',
                     __METHOD__,
                     is_object($code) ? get_class($code) : gettype($code)
                 ),
@@ -263,7 +263,7 @@ class Exception extends PhpException implements ToStringInterface
                 $message = $message['message'];
             } else {
                 $messageVariables = $message;
-                $message = $this->messageTemplate;
+                $message          = $this->messageTemplate;
             }
         }
 
