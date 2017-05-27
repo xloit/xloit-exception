@@ -29,7 +29,7 @@ class IndexOutOfBoundsException extends RuntimeException
     /**
      * Code of the exception.
      *
-     * @var int
+     * @var int|string
      */
-    protected $code = 310;
+    const CODE = 310;
 } 

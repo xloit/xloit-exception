@@ -29,9 +29,9 @@ class FileExistsException extends RuntimeException
     /**
      * Code of the exception.
      *
-     * @var int
+     * @var int|string
      */
-    protected $code = 313;
+    const CODE = 313;
 
     /**
      * Message template.

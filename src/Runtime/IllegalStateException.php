@@ -29,7 +29,7 @@ class IllegalStateException extends RuntimeException
     /**
      * Code of the exception.
      *
-     * @var int
+     * @var int|string
      */
-    protected $code = 311;
+    const CODE = 311;
 } 

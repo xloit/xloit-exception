@@ -30,7 +30,7 @@ class EmptyStackException extends RuntimeException
     /**
      * Code of the exception.
      *
-     * @var int
+     * @var int|string
      */
-    protected $code = 312;
+    const CODE = 312;
 } 

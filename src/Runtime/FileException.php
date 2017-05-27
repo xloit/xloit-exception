@@ -29,7 +29,7 @@ class FileException extends RuntimeException
     /**
      * Code of the exception.
      *
-     * @var int
+     * @var int|string
      */
-    protected $code = 314;
+    const CODE = 314;
 }

@@ -29,9 +29,9 @@ class CouldNotOverwriteException extends RuntimeException
     /**
      * Code of the exception.
      *
-     * @var int
+     * @var int|string
      */
-    protected $code = 317;
+    const CODE = 317;
 
     /**
      * Message template.
